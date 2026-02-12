@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyline Arena | Cravings Called, We Answered</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+:root{
+    --green:#1DB954;
+    --dark:#111;
+    --soft-black:#0f0f0f;
+}
+
+/* NAVIGATION */
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+nav h1{
+    color:var(--green);
+    font-weight:800;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:var(--green);
+}
+
+.btn{
+    background:var(--green);
+    padding:10px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#000;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#17a34a;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://tse4.mm.bing.net/th/id/OIP.JCHA40gUO5gnyccJMhrKfQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
+}
+
+.hero h2{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.hero span{
+    color:var(--green);
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.1rem;
+    color:#ccc;
+}
+
+/* SECTION */
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    color:var(--green);
+}
+
+/* SERVICES */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--soft-black);
+    padding:30px;
+    border-radius:15px;
+    transition:0.4s;
+    border:1px solid #222;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:var(--green);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--green);
+}
+
+/* ABOUT */
+.about{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    background:linear-gradient(90deg, #0f3d2e, #000);
+    padding:80px 10%;
+}
+
+.cta h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    padding:40px 10%;
+    text-align:center;
+    color:#777;
+    border-top:1px solid #222;
+}
+
+footer span{
+    color:var(--green);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h2{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <h1>Skyline Arena</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="btn">Book Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div>
+        <h2>Cravings Called, <br><span>We Answered.</span></h2>
+        <p>Dining. Sports. Luxury Stay. Wellness. All in one destination.</p>
+        <a href="#" class="btn">Explore Skyline</a>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="section-title">
+        <h2>The Skyline Experience</h2>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <h3>Restaurant & Bar</h3>
+            <p>Signature dishes, premium drinks, and unforgettable flavors served in a vibrant atmosphere.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sports Arena</h3>
+            <p>Live matches, tournaments, and electrifying moments on big screens and modern courts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Luxury Accommodation</h3>
+            <p>Elegant suites designed for comfort, class, and complete relaxation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Luster Lounge & Spa</h3>
+            <p>Relax, rejuvenate, and refresh your body and mind in our serene wellness sanctuary.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about">
+        <img src="https://images.stockcake.com/public/5/2/3/52320d13-663f-403f-b500-cfdd71dbb5b3_large/elegant-dinner-setup-stockcake.jpg" alt="Skyline Interior">
+        <div>
+            <h2 style="color:#1DB954; margin-bottom:20px;">About Skyline Arena</h2>
+            <p>
+                Skyline Arena is more than a venue — it's a lifestyle destination. 
+                From gourmet dining to thrilling sports, luxury stays, and premium spa treatments, 
+                we bring experiences together under one roof.
+            </p>
+            <br>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+    <h2>Ready To Answer Your Cravings?</h2>
+    <a href="#" class="btn">Reserve Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 <span>Skyline Arena</span>. Featuring Luster Lounge & Spa. All Rights Reserved.
+</footer>
+
+</body>
+</html>
